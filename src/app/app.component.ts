@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faAnchorCircleCheck} from "@fortawesome/free-solid-svg-icons/faAnchorCircleCheck";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from "./home/home.component";
 
 @Component({
   selector: 'app-root',
-  imports: [FontAwesomeModule, RouterOutlet, HomeComponent],
+  imports: [FontAwesomeModule, RouterOutlet, HomeComponent, NgbModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
