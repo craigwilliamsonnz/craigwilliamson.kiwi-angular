@@ -7,6 +7,7 @@ import {MotorcyclingComponent} from "./motorcycling/motorcycling.component";
 import {MusicComponent} from "./music/music.component";
 import {SoftwareTestingComponent} from "./software-testing/software-testing.component";
 import {PhotographyComponent} from "./photography/photography.component";
+import {ErrorComponent} from "./error/error.component";
 
 export const routes: Routes = [
 
@@ -41,5 +42,9 @@ export const routes: Routes = [
     {
         path: 'software-testing',
         component: SoftwareTestingComponent,
+    },
+    {
+        path: '**',
+        component: ErrorComponent,
     }
 ];
