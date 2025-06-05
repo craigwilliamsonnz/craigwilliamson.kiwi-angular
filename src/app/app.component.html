@@ -9,11 +9,20 @@
     <h1>The busy life of Craig</h1>
 </header>
 <body>
-<fa-icon [icon]="faCoffee"></fa-icon>
-<fa-icon [icon]="faAnchorCircleCheck"></fa-icon>
-<i class="fa-brands fa-github-square"></i>
-<app-home></app-home>
-</body>
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" href=""><fa-icon [icon]="faHome"></fa-icon> Home</a>
+        <a class="nav-item nav-link" href="/blog"><fa-icon [icon]="faBlog"></fa-icon> Craig's Blog</a>
+        <a class="nav-item nav-link" href="/motorcycling"><fa-icon [icon]="faMotorcycle"></fa-icon> Motorcycling</a>
+        <a class="nav-item nav-link" href="/music"><fa-icon [icon]="faMusic"></fa-icon> Music</a>
+        <a class="nav-item nav-link" href="/photography"><fa-icon [icon]="faCamera"></fa-icon> Photography</a>
+        <a class="nav-item nav-link" href="/software-testing"><fa-icon [icon]="faExplosion"></fa-icon> Software Testing</a>
+        <a class="nav-item nav-link" href="/about"><fa-icon [icon]="faKiwiBird"></fa-icon> About The Website</a>
+        <a class="nav-item nav-link" href="/contact"><fa-icon [icon]="faContactCard"></fa-icon> Contact Me</a>
+    </div>
+
+</nav>
 <router-outlet />
+</body>
  </html> 
 

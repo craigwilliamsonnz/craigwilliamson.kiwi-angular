@@ -1,19 +1,32 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { faAnchorCircleCheck} from "@fortawesome/free-solid-svg-icons/faAnchorCircleCheck";
+import {
+  faBlog,
+  faCamera,
+  faContactCard,
+  faExplosion,
+  faHome,
+  faMotorcycle,
+  faMusic,
+  faKiwiBird
+} from '@fortawesome/free-solid-svg-icons';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterOutlet } from '@angular/router';
-import { HomeComponent } from "./home/home.component";
 
 @Component({
   selector: 'app-root',
-  imports: [FontAwesomeModule, RouterOutlet, HomeComponent, NgbModule],
+  imports: [FontAwesomeModule, RouterOutlet, NgbModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'craigwilliamson.kiwi-angular';
-  faCoffee = faCoffee;
-  faAnchorCircleCheck = faAnchorCircleCheck;
+  protected readonly faHome = faHome;
+  protected readonly faContactCard = faContactCard;
+  protected readonly faKiwiBird = faKiwiBird;
+  protected readonly faExplosion = faExplosion;
+  protected readonly faCamera = faCamera;
+  protected readonly faBlog = faBlog;
+  protected readonly faMotorcycle = faMotorcycle;
+  protected readonly faMusic = faMusic;
 }
