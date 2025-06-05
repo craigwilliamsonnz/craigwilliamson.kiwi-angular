@@ -1,15 +1,5 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import {
-  faBlog,
-  faCamera,
-  faContactCard,
-  faExplosion,
-  faHome,
-  faMotorcycle,
-  faMusic,
-  faKiwiBird
-} from '@fortawesome/free-solid-svg-icons';
 import {faAmazon, faAngular, faBootstrap, faFontAwesome} from "@fortawesome/free-brands-svg-icons";
 
 @Component({
