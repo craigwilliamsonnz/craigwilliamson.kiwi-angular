@@ -12,6 +12,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
+import {
+  faFacebook,
+  faGithub,
+  faXTwitter
+} from "@fortawesome/free-brands-svg-icons";
 
 @Component({
   selector: 'app-root',
@@ -29,4 +34,9 @@ export class AppComponent {
   protected readonly faBlog = faBlog;
   protected readonly faMotorcycle = faMotorcycle;
   protected readonly faMusic = faMusic;
+  protected readonly faFacebook = faFacebook;
+  protected readonly faGithub = faGithub;
+  protected readonly faXTwitter = faXTwitter;
+
+  getYear = new Date().getFullYear();
 }
