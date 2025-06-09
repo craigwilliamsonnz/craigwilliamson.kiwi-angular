@@ -11,11 +11,11 @@ import {
   faKiwiBird
 } from '@fortawesome/free-solid-svg-icons';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { RouterOutlet } from '@angular/router';
+import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [FontAwesomeModule, RouterOutlet, NgbModule],
+  imports: [FontAwesomeModule, RouterOutlet, NgbModule, RouterLinkActive, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
