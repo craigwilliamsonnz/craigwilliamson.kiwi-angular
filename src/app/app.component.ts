@@ -26,17 +26,17 @@ import {
 })
 export class AppComponent {
   title = 'craigwilliamson.kiwi-angular';
-  protected readonly faHome = faHome;
-  protected readonly faContactCard = faContactCard;
-  protected readonly faKiwiBird = faKiwiBird;
-  protected readonly faExplosion = faExplosion;
-  protected readonly faCamera = faCamera;
-  protected readonly faBlog = faBlog;
-  protected readonly faMotorcycle = faMotorcycle;
-  protected readonly faMusic = faMusic;
-  protected readonly faFacebook = faFacebook;
-  protected readonly faGithub = faGithub;
-  protected readonly faXTwitter = faXTwitter;
+  readonly faHome = faHome;
+  readonly faContactCard = faContactCard;
+  readonly faKiwiBird = faKiwiBird;
+  readonly faExplosion = faExplosion;
+  readonly faCamera = faCamera;
+  readonly faBlog = faBlog;
+  readonly faMotorcycle = faMotorcycle;
+  readonly faMusic = faMusic;
+  readonly faFacebook = faFacebook;
+  readonly faGithub = faGithub;
+  readonly faXTwitter = faXTwitter;
 
   getYear = new Date().getFullYear();
 }
