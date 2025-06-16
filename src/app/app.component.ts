@@ -13,8 +13,9 @@ import {
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {
+  faConfluence,
   faFacebook,
-  faGithub,
+  faGithub, faJira,
   faXTwitter
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -39,4 +40,6 @@ export class AppComponent {
   readonly faXTwitter = faXTwitter;
 
   getYear = new Date().getFullYear();
+    protected readonly faConfluence = faConfluence;
+  protected readonly faJira = faJira;
 }
