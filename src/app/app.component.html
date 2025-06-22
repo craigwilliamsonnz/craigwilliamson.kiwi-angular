@@ -1,37 +1,4 @@
-<div>
-    <div class="row">
-        <div class="col col-auto"><img src="pigeon-cropped.png" height="60"/></div>
-        <div class="col col-auto"><h1>The busy life of Craig</h1></div>
-    </div>
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link" routerLink="" routerLinkActive="active"><fa-icon [icon]="faHome"></fa-icon> Home</a>
-            <a class="nav-item nav-link" routerLink="/blog" routerLinkActive="active"><fa-icon [icon]="faBlog"></fa-icon> Craig's Blog</a>
-            <a class="nav-item nav-link" routerLink="/motorcycling" routerLinkActive="active"><fa-icon [icon]="faMotorcycle"></fa-icon> Motorcycling</a>
-            <a class="nav-item nav-link" routerLink="/music" routerLinkActive="active"><fa-icon [icon]="faMusic"></fa-icon> Music</a>
-            <a class="nav-item nav-link" routerLink="/photography" routerLinkActive="active"><fa-icon [icon]="faCamera"></fa-icon> Photography</a>
-            <a class="nav-item nav-link" routerLink="/software-testing" routerLinkActive="active"><fa-icon [icon]="faExplosion"></fa-icon> Software Testing</a>
-            <a class="nav-item nav-link" routerLink="/about" routerLinkActive="active"><fa-icon [icon]="faKiwiBird"></fa-icon> About The Website</a>
-            <a class="nav-item nav-link" routerLink="/contact" routerLinkActive="active"><fa-icon [icon]="faContactCard"></fa-icon> Contact Me</a>
-        </div>
-    </nav>
-</div>
+<app-navbar />
 <router-outlet />
-<footer class="fixed-bottom bg-dark text-light row">
-    <div class="container">
-        <div class="row p-1">
-            <div class="col text-center">Craig Williamson ©{{ getYear }}</div>
-        </div>
-        <div class="row p-1">
-            <div class="col text-center">
-                <a class="text-light" href="https://www.facebook.com/craig.williamson.5794" target="_blank"><fa-icon [icon]="faFacebook" size="2x" class="p-2"></fa-icon></a>
-                <a class="text-light" href="https://x.com/CraigtwOnline" target="_blank"><fa-icon [icon]="faXTwitter" size="2x" class="p-2"></fa-icon></a>
-                <a class="text-light" href="https://github.com/craigwilliamsonnz/" target="_blank"><fa-icon [icon]="faGithub" size="2x" class="p-2"></fa-icon></a>
-                <a class="text-light" href="https://craigwilliamsonnz.atlassian.net/wiki/" target="_blank"><fa-icon [icon]="faConfluence" size="2x" class="p-2"></fa-icon></a>
-                <a class="text-light" href="https://craigwilliamsonnz.atlassian.net/jira/" target="_blank"><fa-icon [icon]="faJira" size="2x" class="p-2"></fa-icon></a>
-            </div>
-        </div>
-    </div>
-</footer>
+<app-footer />
 

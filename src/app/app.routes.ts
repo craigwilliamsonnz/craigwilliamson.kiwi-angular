@@ -1,50 +1,54 @@
 import { Routes } from '@angular/router';
-import {HomeComponent} from "./home/home.component";
-import {AboutComponent} from "./about/about.component";
-import {BlogComponent} from "./blog/blog.component";
-import {ContactComponent} from "./contact/contact.component";
-import {MotorcyclingComponent} from "./motorcycling/motorcycling.component";
-import {MusicComponent} from "./music/music.component";
-import {SoftwareTestingComponent} from "./software-testing/software-testing.component";
-import {PhotographyComponent} from "./photography/photography.component";
-import {ErrorComponent} from "./error/error.component";
 
 export const routes: Routes = [
-
     {
         path: '',
-        component: HomeComponent,
+        loadComponent: () => import('./home/home.component').then(m => m.HomeComponent),
+        title: 'Home'
     },
     {
         path: 'about',
-        component: AboutComponent,
+        loadComponent: () => import('./about/about.component').then(m => m.AboutComponent),
+        title: 'About'
     },
     {
         path: 'blog',
-        component: BlogComponent,
+        loadComponent: () => import('./blog/blog.component').then(m => m.BlogComponent),
+        title: 'Blog'
     },
     {
         path: 'contact',
-        component: ContactComponent,
+        loadComponent: () => import('./contact/contact.component').then(m => m.ContactComponent),
+        title: 'Contact'
+    },
+    {
+        path: 'home',
+        loadComponent: () => import('./home/home.component').then(m => m.HomeComponent),
+        title: 'Home'
     },
     {
         path: 'motorcycling',
-        component: MotorcyclingComponent,
+        loadComponent: () => import('./motorcycling/motorcycling.component').then(m => m.MotorcyclingComponent),
+        title: 'Motorcycling'
     },
     {
         path: 'music',
-        component: MusicComponent,
+        loadComponent: () => import('./music/music.component').then(m => m.MusicComponent),
+        title: 'Music'
     },
     {
         path: 'photography',
-        component: PhotographyComponent,
+        loadComponent: () => import('./photography/photography.component').then(m => m.PhotographyComponent),
+        title: 'Photography'
     },
     {
         path: 'software-testing',
-        component: SoftwareTestingComponent,
+        loadComponent: () => import('./software-testing/software-testing.component').then(m => m.SoftwareTestingComponent),
+        title: 'Software Testing'
     },
     {
         path: '**',
-        component: ErrorComponent,
+        loadComponent: () => import('./error/error.component').then(m => m.ErrorComponent),
+        title: '404 - Page Not Found'
     }
 ];

@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import {CommonModule} from "@angular/common";
 
 @Component({
   selector: 'app-software-testing',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './software-testing.component.html',
   styleUrl: './software-testing.component.css'
 })

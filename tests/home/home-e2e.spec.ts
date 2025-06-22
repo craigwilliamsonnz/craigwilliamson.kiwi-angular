@@ -1,10 +1,14 @@
 import { test, expect } from '@playwright/test';
 
-test('about page loaded', async ({ page }) => {
-  await page.goto('http://localhost:4200');
+test('home page loaded via URL', async ({ page }) => {
+  await page.goto('http://localhost:4200/home');
 
-  // Click the get started link.
-  await page.getByRole('button', { name: 'Enter' }).click();
+  // Expects page to have a heading with the name of Installation.
+  await expect(page.getByTestId('home-content')).toHaveText('Home page works!');
+});
+
+test('home page loaded', async ({ page }) => {
+  await page.goto('http://localhost:4200');
 
   await page.getByRole('link', { name: 'Home' }).click();
 
