@@ -1,6 +1,14 @@
 import { Component } from '@angular/core';
 import {CommonModule} from "@angular/common";
-import {faBitbucket, faConfluence, faFacebook, faGithub, faJira, faXTwitter} from "@fortawesome/free-brands-svg-icons";
+import {
+    faBitbucket,
+    faConfluence,
+    faFacebook,
+    faGithub,
+    faJira,
+    faLinkedin,
+    faXTwitter
+} from "@fortawesome/free-brands-svg-icons";
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 
 @Component({
@@ -18,4 +26,5 @@ export class FooterComponent {
   readonly faBitbucket = faBitbucket;
   readonly faConfluence = faConfluence;
   readonly faJira = faJira;
+  readonly faLinkedin = faLinkedin;
 }

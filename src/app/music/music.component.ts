@@ -4,7 +4,7 @@ import {CommonModule} from "@angular/common";
 @Component({
   selector: 'app-music',
   standalone: true,
-  imports: [CommonModule],
+    imports: [CommonModule],
   templateUrl: './music.component.html',
   styleUrl: './music.component.css'
 })
